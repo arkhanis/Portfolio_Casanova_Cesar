@@ -174,16 +174,37 @@ Defining GRID
 ***************************************************/
 
 .container {
-    width: 100%;
+    height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "main main main languaje"
+    "main main main theme"
+    "linkedin github projects projects"
+    "skills skills contact xp";
+    grid-gap: 0.5rem;
 }
 
-.container-fluid {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+
+@media only screen and (max-width: 700px) {
+    .container {
+        height: 200vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "languaje theme"
+        "main main"
+        "linkedin github"
+        "projects projects"
+        "skills skills"
+        "contact xp";
+    }
+    
 }
 
 
@@ -193,46 +214,55 @@ Styles of each BOX
 ***************************************************/
 
 .main {
-    width: 100%;
+    grid-area: main;
+    border-radius: 1rem;
     background-color: violet;
 }
 
 .languaje {
-    width: 100%;
+    grid-area: languaje;
+    border-radius: 1rem;
     background-color: yellow;
 }
 
 .theme {
-    width: 100%;
+    grid-area: theme;
+    border-radius: 1rem;
     background-color: green;
 }
 
 .linkedin {
-    width: 100%;
+    grid-area: linkedin;
+    border-radius: 1rem;
     background-color: blue;
 }
 
 .github {
-    width: 100%;
+    grid-area: github;
+    border-radius: 1rem;
     background-color: red;
 }
 
 .projects {
-    width: 100%;
+    grid-area: projects;
+    border-radius: 1rem;
     background-color: rgb(81, 178, 219);
 }
 
 .skills {
-    width: 100%;
+    grid-area: skills;
+    border-radius: 1rem;
     background-color: brown;
 }
 
 .contact {
-    width: 100%;
+    grid-area: contact;
+    border-radius: 1rem;
     background-color: rgb(255, 255, 0);
 }
 
 .xp {
-    width: 100%;
+    grid-area: xp;
+    border-radius: 1rem;
     background-color: rgb(255, 0, 255);
-}
+}   
