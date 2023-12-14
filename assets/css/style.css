@@ -1,67 +1,238 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* Tipografía */
 
-:root{
-    --main-color: #f7c110;
-    --main-color-dark: #fa5514;
-    --background-color: #fff;
-    --background-color-dark: #0D1017;
-    --text-color: #2B292A;
-    --text-color-dark: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
 
-    --body-color: #f2f2f2;
+/**************************************************
+RESETS START
+***************************************************/
+
+/* Defining Custom properties */
+
+:root {
+    /* Fonts colors */
+    --color-principal: #e4e4e4;
+    --color-secundario: #333333;
+    /* Tipography */
+    --tipo-principal: Lato, sans-serif;
+    --tipo-secundaria: Inter, sans-serif;
+    /* Background */
+    --background-color: #333333;
+    --background-color-secundario: #e4e4e4;
 }
 
+/* Resetting the margins and paddings of all labels */
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth;
-    transition: all 200ms ease;
-  }
-
-body{
-    background-color: var(--body-color);
+    vertical-align: baseline;
 }
 
-.container{
+/* Avoiding problems with images */
+img,
+picture,
+video,
+iframe,
+figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    /* opcional */
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* opcional */
+    -o-object-position: center center;
+    object-position: center center;
+}
+
+/* Resetting the links to function as boxes... */
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+/* ...except those found in paragraphs */
+p a {
+    display: inline;
+}
+
+/* Removing dots from <li> */
+li {
+    list-style-type: none;
+}
+
+/* Setting up soft anchors */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Disabling default styles of main text labels */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Avoiding problems with quotes pseudo-elements */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+/* Setting the text I select */
+::-moz-selection {
+    background-color: var(--background-color);
+    color: var(--color-principal);
+}
+::selection {
+    background-color: var(--background-color);
+    color: var(--color-principal);
+}
+
+/* Avoiding font and form placement problems */
+form,
+input,
+textarea,
+select,
+button,
+label {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    /* opcional */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Resetting the tables */
+table,
+tr,
+td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Avoiding problems with SVGs */
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+/* Typography for the entire web */
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    color: var(--color-principal);
+    /* opcional */
+    line-height: 1.4em;
+    /* opcional */
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    /* opcional */
+    font-smooth: always;
+    /* opcional */
+    -webkit-font-smoothing: antialiased;
+    /* opcional */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/**************************************************
+Defining GRID
+***************************************************/
+
+.container {
     width: 100%;
     max-width: 1200px;
-    padding: 10px 50px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--background-color);
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
-.container .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
-.container .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+
+
+/**************************************************
+Styles of each BOX
+***************************************************/
+
+.main {
+    width: 100%;
+    background-color: violet;
 }
 
-.nav__menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color: var(--text-color);
+.languaje {
+    width: 100%;
+    background-color: yellow;
 }
 
-.nav__list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    color: var(--text-color);
+.theme {
+    width: 100%;
+    background-color: green;
+}
+
+.linkedin {
+    width: 100%;
+    background-color: blue;
+}
+
+.github {
+    width: 100%;
+    background-color: red;
+}
+
+.projects {
+    width: 100%;
+    background-color: rgb(81, 178, 219);
+}
+
+.skills {
+    width: 100%;
+    background-color: brown;
+}
+
+.contact {
+    width: 100%;
+    background-color: rgb(255, 255, 0);
+}
+
+.xp {
+    width: 100%;
+    background-color: rgb(255, 0, 255);
 }
