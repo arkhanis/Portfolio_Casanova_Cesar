@@ -220,6 +220,10 @@ Styles of each BOX
     grid-area: main;
     border-radius: 1rem;
     background-color: var(--background-principal);
+    background-image: url(../images/home-cesar.png);
+    background-size:65%;
+    background-position: 140% 8%;
+    background-repeat: no-repeat;
     color: var(--color-principal);
     padding: 2rem; 
     display: flex;   
