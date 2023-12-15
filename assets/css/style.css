@@ -245,6 +245,8 @@ Styles of each BOX
 
 .projects {
     grid-area: projects;
+    background-image: url(../images/projects.gif);
+    background-size: cover;
     border-radius: 1rem;
     background-color: rgb(81, 178, 219);
 }
