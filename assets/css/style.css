@@ -10,14 +10,14 @@ RESETS START
 
 :root {
     /* Fonts colors */
-    --color-principal: #e4e4e4;
-    --color-secundario: #333333;
+    --color-principal: #333;
+    --color-secundario: #9b76a9;
     /* Tipography */
     --tipo-principal: Lato, sans-serif;
     --tipo-secundaria: Inter, sans-serif;
     /* Background */
-    --background-color: #333333;
-    --background-color-secundario: #e4e4e4;
+    --background-principal: #f1d9fa;
+    --background-secundario: #9b76a9;
 }
 
 /* Resetting the margins and paddings of all labels */
@@ -104,11 +104,11 @@ q:after {
 
 /* Setting the text I select */
 ::-moz-selection {
-    background-color: var(--background-color);
+    background-color: var(--background-principal);
     color: var(--color-principal);
 }
 ::selection {
-    background-color: var(--background-color);
+    background-color: var(--background-principal);
     color: var(--color-principal);
 }
 
@@ -213,21 +213,36 @@ Defining GRID
 Styles of each BOX
 ***************************************************/
 
+
+
+
 .main {
     grid-area: main;
     border-radius: 1rem;
-    background-color: violet;
+    background-color: var(--background-principal);
+    color: var(--color-principal);
+    padding: 2rem; 
+    display: flex;   
+    align-items: end;
+}
+
+.main h2, h3{
+    width: 70%;
+    padding-bottom: 2rem;
 }
 
 .languaje {
     grid-area: languaje;
     border-radius: 1rem;
-    background-color: yellow;
+    background-color: var(--background-principal);
+    color: var(--color-principal);
 }
 
 .theme {
     grid-area: theme;
     border-radius: 1rem;
+    background-color: var(--background-principal);
+    color: var(--color-principal);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,41 +251,63 @@ Styles of each BOX
 .linkedin {
     grid-area: linkedin;
     border-radius: 1rem;
-    background-color: blue;
+    background-color: var(--background-principal);
+    color: var(--color-principal);
 }
 
 .github {
     grid-area: github;
     border-radius: 1rem;
-    background-color: red;
+    background-color: var(--background-principal);
+    color: var(--color-principal);
 }
 
 .projects {
     grid-area: projects;
-    background-image: url(../images/giphy7.gif);
-    background-size: cover;
+    background-image: url(../images/gifs/giphy7.gif);
     border-radius: 1rem;
-    background-color: rgb(81, 178, 219);
+    background-color: var(--background-principal);
+    color: var(--color-principal);
 }
 
 .skills {
     grid-area: skills;
     border-radius: 1rem;
-    background-color: brown;
+    background-color: var(--background-principal);
+    color: var(--color-principal);
 }
 
 .contact {
     grid-area: contact;
     border-radius: 1rem;
-    background-color: rgb(255, 255, 0);
+    background-color: var(--background-principal);
+    color: var(--color-principal);
 }
 
 .xp {
     grid-area: xp;
     border-radius: 1rem;
-    background-color: rgb(255, 0, 255);
+    background-color: var(--background-principal);
+    color: var(--color-principal);
 }   
 
+
+h2{
+    font-family: var(--tipo-secundaria);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+h3{
+    font-family: var(--tipo-principal);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+strong{
+    font-weight: 800;
+}
 
 /********************************************************************** 
 Styles theme box
