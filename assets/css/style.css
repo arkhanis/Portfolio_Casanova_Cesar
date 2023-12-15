@@ -11,7 +11,7 @@ RESETS START
 :root {
     /* Fonts colors */
     --color-principal: #f0f0f0;
-    --color-secundario: #9b76a9;
+    --color-secundario: #4e4352;
     /* Tipography */
     --tipo-principal: Lato, sans-serif;
     --tipo-secundaria: Inter, sans-serif;
@@ -443,6 +443,8 @@ Styles of each BOX
 
 .github {
     grid-area: github;
+    background-image: url(../images/gifs/giphy8.gif);
+    background-size: cover;
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
@@ -465,9 +467,27 @@ Styles of each BOX
 
 .contact {
     grid-area: contact;
+    background-image: url(../images/gifs/giphy9.gif);
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h2{
+    font-size: 4rem;
+    color: var(--color-secundario);
+}
+
+.contact h3{
+    font-size: 1.1rem;
+    color: var(--color-secundario);
 }
 
 .xp {
