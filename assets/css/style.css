@@ -18,6 +18,8 @@ RESETS START
     /* Background */
     --background-principal: #444;
     --background-secundario: #9b76a9;
+
+    --box-shadow-principal: 0 0 20px rgba(0, 0, 0, 0.5)
 }
 
 /* Resetting the margins and paddings of all labels */
@@ -178,7 +180,6 @@ Defining GRID
     max-width: 1200px;
     margin: 0 auto;
     padding: 0.5rem;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -230,7 +231,7 @@ Styles of each BOX
 ***************************************************/
 
 
-
+/* === Main Box ===*/
 
 .main {
     grid-area: main;
@@ -246,10 +247,20 @@ Styles of each BOX
     align-items: end;
 }
 
+.main:hover{
+    background-position: 140% 10%;
+    background-size: 65%;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.01);
+    box-shadow: var(--box-shadow-principal);
+}
+
 .main h2, h3{
     width: 70%;
     padding-bottom: 2rem;
 }
+
+/* === Languaje Box ===*/
 
 .languaje {
     grid-area: languaje;
@@ -262,6 +273,12 @@ Styles of each BOX
     color: var(--color-principal);
 }
 
+.languaje:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.01);
+    box-shadow: var(--box-shadow-principal);
+}
+
 .languaje h2{
     font-size: 2rem;
 }
@@ -271,8 +288,6 @@ Styles of each BOX
     padding: 1rem;
 }
 
-
-/* === removing default button style ===*/
 .languaje__op button {
     position: relative;
     padding: 12px 35px;
@@ -424,6 +439,8 @@ Styles of each BOX
   }
 
 
+/* === Theme Box ===*/
+
 .theme {
     grid-area: theme;
     border-radius: 1rem;
@@ -434,12 +451,36 @@ Styles of each BOX
     justify-content: center;
 }
 
+.theme:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: var(--box-shadow-principal);
+}
+
+/* === Linkedin Box ===*/
+
 .linkedin {
     grid-area: linkedin;
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+.linkedin:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: var(--box-shadow-principal);
+}
+
+.linkedin i{
+    font-size: 5rem;
+}
+
+/* === Github Box ===*/
 
 .github {
     grid-area: github;
@@ -448,7 +489,24 @@ Styles of each BOX
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+    cursor: pointer;
 }
+
+.github:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.01);
+    box-shadow: var(--box-shadow-principal);
+}
+
+.github i{
+    font-size: 3rem;
+}
+
+/* === Project Box ===*/
 
 .projects {
     grid-area: projects;
@@ -456,21 +514,45 @@ Styles of each BOX
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.5rem;
+    cursor: pointer;
 }
+
+.projects:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.01);
+    box-shadow: var(--box-shadow-principal);
+}
+
+/* === Skills Box ===*/
 
 .skills {
     grid-area: skills;
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
+
+.skills i{
+    font-size: 2rem;
+}
+
+/* === Contact Box ===*/
 
 .contact {
     grid-area: contact;
-    background-image: url(../images/gifs/giphy9.gif);
-    background-size:cover;
-    background-position:center ;
-    background-repeat: no-repeat;
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
@@ -480,24 +562,43 @@ Styles of each BOX
     justify-content: center;
 }
 
-.contact h2{
-    font-size: 4rem;
-    color: var(--color-secundario);
+.contact:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: var(--box-shadow-principal);
 }
 
-.contact h3{
-    font-size: 1.1rem;
-    color: var(--color-secundario);
+.contact h2{
+    font-size: 5rem;
+    font-weight: 800;
 }
+
+/* === Experience Box ===*/
 
 .xp {
     grid-area: xp;
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
 }   
 
+.xp h2{
+    font-size: 5rem;
+    font-weight: 800;
+}
 
+.xp h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 40%;
+    padding-bottom: 0;
+    text-align: center;
+}
 
 
 /********************************************************************** 
