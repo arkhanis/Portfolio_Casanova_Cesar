@@ -176,7 +176,7 @@ Defining GRID
 ***************************************************/
 
 .container {
-    height: 100vh;
+    height: 150vh;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0.5rem;
@@ -186,9 +186,9 @@ Defining GRID
     grid-template-areas: 
     "main main main languaje"
     "main main main theme"
-    "linkedin github projects projects"
-    "skills skills contact xp";
-    grid-gap: 0.5rem;
+    "linkedin contact projects projects"
+    "github github skills  xp";
+    grid-gap: 1rem;
 }
 
 h2{
@@ -546,7 +546,7 @@ Styles of each BOX
 }
 
 .skills i{
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 /* === Contact Box ===*/
