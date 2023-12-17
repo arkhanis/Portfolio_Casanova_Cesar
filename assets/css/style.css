@@ -208,22 +208,6 @@ strong{
     font-weight: 800;
 }
 
-@media only screen and (max-width: 700px) {
-    .container {
-        height: 200vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 2fr 0.5fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "languaje theme"
-        "main main"
-        "linkedin github"
-        "projects projects"
-        "skills skills"
-        "contact xp";
-    }
-    
-}
-
 
 
 /**************************************************
@@ -258,6 +242,16 @@ Styles of each BOX
 .main h2, h3{
     width: 70%;
     padding-bottom: 2rem;
+}
+
+.main h2{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.main h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 /* === Languaje Box ===*/
@@ -506,6 +500,16 @@ Styles of each BOX
     font-size: 3rem;
 }
 
+.github h2{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.github h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
 /* === Project Box ===*/
 
 .projects {
@@ -529,6 +533,16 @@ Styles of each BOX
     box-shadow: var(--box-shadow-principal);
 }
 
+.projects h2{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.projects h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
 /* === Skills Box ===*/
 
 .skills {
@@ -538,9 +552,8 @@ Styles of each BOX
     color: var(--color-principal);
     padding: 1rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
+    align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -806,3 +819,131 @@ Styles theme box
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
+/*******************************************************************************
+Mobile
+*******************************************************************************/
+
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr 0.7fr 0.7fr;
+        grid-template-areas: 
+        "main main main languaje"
+        "main main main theme"
+        "linkedin contact projects projects"
+        "github github skills  xp";
+        grid-gap: 1rem;
+    }
+    
+    .main{
+        background-size:130%;
+        background-position: -70% 8%;
+    }
+
+    .main:hover{
+        background-position: -70% 8%;
+        background-size: 135%;
+    }
+
+    .main h2{
+        font-size: 2.4rem;
+        line-height: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .main h3{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .skills i{
+        font-size: 2rem;
+    }
+
+    .github h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+    .github h3{
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .projects h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+    .projects h3{
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .container {
+        height: 150vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 1.5fr 1fr 1.5fr;
+        grid-template-areas: 
+        "main main main"
+        "languaje theme linkedin"
+        "projects projects projects"
+        "contact skills xp"
+        "github github github";
+    }
+    
+    .main{
+        background-size:80%;
+        background-position: 190% 8%;
+    }
+
+    .main:hover{
+        background-position: -70% 8%;
+        background-size: 135%;
+    }
+
+    .main h2{
+        font-size: 2.4rem;
+        line-height: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .main h3{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .skills i{
+        font-size: 2rem;
+    }
+
+    .github h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+    .github h3{
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .projects h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+    .projects h3{
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+}
+
