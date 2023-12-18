@@ -484,14 +484,21 @@ Styles of each BOX
     font-size: 5rem;
 }
 
+.linkedin i:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
 /* === Github Box ===*/
 
 .github {
     grid-area: github;
-    background-image: url(../images/gifs/giphy8.gif);
+    background-image: 
+    linear-gradient( rgba(0,0,0, 0.3), rgba(0,0,0, 0.3) ),
+    url(../images/gifs/giphy8.gif);
     background-size: cover;
     border-radius: 1rem;
-    background-color: var(--background-principal);
+    background-color: hsla(0, 5%, 8%, 0.748);
     color: var(--color-principal);
     display: flex;
     flex-direction: column;
@@ -526,7 +533,10 @@ Styles of each BOX
 
 .projects {
     grid-area: projects;
-    background-image: url(../images/gifs/giphy7.gif);
+    background-image: 
+    linear-gradient( rgba(0,0,0, 0.3), rgba(0,0,0, 0.3) ),
+    url(../images/gifs/giphy7.gif);
+    background-size: contain;
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
@@ -555,6 +565,17 @@ Styles of each BOX
 .projects h3{
     font-size: 1.5rem;
     line-height: 2rem;
+}
+
+.projects__title{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.projects__title i{
+    display: flex;
+    font-size: 2rem;
 }
 
 /* === Skills Box ===*/
@@ -603,6 +624,12 @@ Styles of each BOX
     box-shadow: var(--box-shadow-principal);
     border: 1px solid #4e4352;
 }
+
+.contact i:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
 
 .contact h2{
     font-size: 5rem;
