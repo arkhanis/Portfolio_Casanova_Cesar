@@ -225,9 +225,10 @@ Styles of each BOX
     grid-area: main;
     border-radius: 1rem;
     background-color: var(--box-color-principal);
-    background-image: url(../images/home-cesar.png);
-    background-size:65%;
-    background-position: 140% 8%;
+    background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.751), rgb(101, 90, 128) ),
+    url(../images/gifs/gliphyFondo2.gif);
+    background-size: 120%;
     background-repeat: no-repeat;
     color: var(--color-principal);
     padding: 2rem; 
@@ -238,8 +239,6 @@ Styles of each BOX
 
 
 .main:hover{
-    background-position: 140% 10%;
-    background-size: 65%;
     transition: all 0.3s ease-in-out;
     transform: scale(1.01);
     box-shadow: var(--box-shadow-principal);
@@ -274,6 +273,10 @@ Styles of each BOX
     color: var(--color-principal);
     border: 1px solid var(--box-color-principal);
     gap: 1rem;
+    background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.905), rgb(75, 65, 95) ),
+    url(../images/gifs/gliphyFondo.gif);
+    background-size: 150%;
 }
 
 .languaje:hover{
@@ -454,6 +457,10 @@ Styles of each BOX
     align-items: center;
     justify-content: center;
     border: 1px solid var(--box-color-principal);
+    background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.905), rgb(75, 65, 95) ),
+    url(../images/gifs/gliphyFondo.gif);
+    background-size: 150%;
 }
 
 .theme:hover{
@@ -496,7 +503,7 @@ Styles of each BOX
 .github {
     grid-area: github;
     background-image: 
-    linear-gradient( rgba(0,0,0, 0.3), rgba(0,0,0, 0.3) ),
+    linear-gradient( rgba(0,0,0, 0.905), rgba(0,0,0, 0.3) ),
     url(../images/gifs/giphy8.gif);
     background-size: cover;
     border-radius: 1rem;
@@ -618,6 +625,10 @@ Styles of each BOX
     align-items: center;
     justify-content: center;
     border: 1px solid var(--box-color-principal);
+    background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.905), rgb(75, 65, 95) ),
+    url(../images/gifs/gliphyFondo.gif);
+    background-size: 150%;
 }
 
 .contact:hover{
@@ -636,6 +647,7 @@ Styles of each BOX
 .contact h2{
     font-size: 5rem;
     font-weight: 800;
+    color: #d5f365;
 }
 
 /* === Experience Box ===*/
@@ -651,6 +663,10 @@ Styles of each BOX
     align-items: center;
     gap: 1.2rem;
     border: 1px solid var(--box-color-principal);
+    background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.905), rgb(75, 65, 95) ),
+    url(../images/gifs/gliphyFondo.gif);
+    background-size: 150%;
 }   
 
 .xp h2{
@@ -894,13 +910,7 @@ Mobile
     }
     
     .main{
-        background-size:130%;
-        background-position: -70% 8%;
-    }
-
-    .main:hover{
-        background-size:130%;
-        background-position: -70% 8%;
+        background-size:150%;
     }
 
     .main h2{
@@ -955,13 +965,7 @@ Mobile
     }
     
     .main{
-        background-size:80%;
-        background-position: 190% 8%;
-    }
-
-    .main:hover{
-        background-size:80%;
-        background-position: 190% 8%;
+        background-size:100%;
     }
 
     .languaje h2{
