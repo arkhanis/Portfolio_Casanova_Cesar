@@ -284,7 +284,7 @@ Styles of each BOX
 
 .languaje__op button {
     position: relative;
-    padding: 12px 35px;
+    padding: 12px 20px;
     background: #FEC195;
     font-size: 17px;
     font-weight: 500;
@@ -550,7 +550,14 @@ Styles of each BOX
     border-radius: 1rem;
     background-color: var(--background-principal);
     color: var(--color-principal);
-    padding: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__icons{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -889,15 +896,15 @@ Mobile
 
 @media only screen and (max-width: 750px) {
     .container {
-        height: 150vh;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 3fr 1fr 1.5fr 1fr 1.5fr;
+        height: 200vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 0.7fr 1fr 1fr 0.7fr;
         grid-template-areas: 
-        "main main main"
-        "languaje theme linkedin"
-        "projects projects projects"
-        "contact skills xp"
-        "github github github";
+        "main main main main"
+        "languaje languaje theme theme"
+        "linkedin projects projects projects"
+        "github github github contact"
+        "skills skills xp xp";
     }
     
     .main{
@@ -910,8 +917,21 @@ Mobile
         background-size: 135%;
     }
 
+    .languaje h2{
+        font-size: 1.rem;
+        line-height: 1.5rem;
+    }
+
+    .languaje__op{
+        padding: 0;
+    }
+
+    .languaje__op button {
+        padding: 8px 14px;
+      }
+
     .main h2{
-        font-size: 2.4rem;
+        font-size: 2.1rem;
         line-height: 2rem;
         padding-bottom: 1.5rem;
     }
@@ -945,5 +965,9 @@ Mobile
         font-size: 1.2rem;
         line-height: 1.2rem;
     }
+
+    .theme-switch {
+        --toggle-size: 15px;
+      }
 }
 
