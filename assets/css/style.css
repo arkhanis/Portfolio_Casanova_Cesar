@@ -899,8 +899,8 @@ Mobile
     }
 
     .main:hover{
+        background-size:130%;
         background-position: -70% 8%;
-        background-size: 135%;
     }
 
     .main h2{
@@ -960,8 +960,8 @@ Mobile
     }
 
     .main:hover{
-        background-position: -70% 8%;
-        background-size: 135%;
+        background-size:80%;
+        background-position: 190% 8%;
     }
 
     .languaje h2{
@@ -990,7 +990,7 @@ Mobile
     }
 
     .skills i{
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 
     .github h2{
