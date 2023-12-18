@@ -16,10 +16,12 @@ RESETS START
     --tipo-principal: Lato, sans-serif;
     --tipo-secundaria: Inter, sans-serif;
     /* Background */
-    --background-principal: #444;
+    --background-principal: #1f2023;
     --background-secundario: #9b76a9;
 
-    --box-shadow-principal: 0 0 20px rgba(0, 0, 0, 0.5)
+    --box-color-principal: #323232;
+
+    --box-shadow-principal: 1px 10px 20px rgba(0, 0, 0, 0.9);
 }
 
 /* Resetting the margins and paddings of all labels */
@@ -156,6 +158,7 @@ body {
     font-size: 100%;
     font-family: var(--tipo-principal);
     color: var(--color-principal);
+    background-color: var(--background-principal);
     /* opcional */
     line-height: 1.4em;
     /* opcional */
@@ -220,7 +223,7 @@ Styles of each BOX
 .main {
     grid-area: main;
     border-radius: 1rem;
-    background-color: var(--background-principal);
+    background-color: var(--box-color-principal);
     background-image: url(../images/home-cesar.png);
     background-size:65%;
     background-position: 140% 8%;
@@ -229,7 +232,9 @@ Styles of each BOX
     padding: 2rem; 
     display: flex;   
     align-items: end;
+    border: 1px solid var(--box-color-principal);
 }
+
 
 .main:hover{
     background-position: 140% 10%;
@@ -237,6 +242,7 @@ Styles of each BOX
     transition: all 0.3s ease-in-out;
     transform: scale(1.01);
     box-shadow: var(--box-shadow-principal);
+    border: 1px solid #4e4352;
 }
 
 .main h2, h3{
@@ -263,14 +269,16 @@ Styles of each BOX
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-principal);
+    background-color: var(--box-color-principal);
     color: var(--color-principal);
+    border: 1px solid var(--box-color-principal);
 }
 
 .languaje:hover{
     transition: all 0.3s ease-in-out;
     transform: scale(1.01);
     box-shadow: var(--box-shadow-principal);
+    border: 1px solid #4e4352;
 }
 
 .languaje h2{
@@ -438,17 +446,19 @@ Styles of each BOX
 .theme {
     grid-area: theme;
     border-radius: 1rem;
-    background-color: var(--background-principal);
+    background-color: var(--box-color-principal);
     color: var(--color-principal);
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--box-color-principal);
 }
 
 .theme:hover{
     transition: all 0.3s ease-in-out;
     transform: scale(1.02);
     box-shadow: var(--box-shadow-principal);
+    border: 1px solid #4e4352;
 }
 
 /* === Linkedin Box ===*/
@@ -456,7 +466,7 @@ Styles of each BOX
 .linkedin {
     grid-area: linkedin;
     border-radius: 1rem;
-    background-color: var(--background-principal);
+    background-color: #3D7EAE;
     color: var(--color-principal);
     display: flex;
     justify-content: center;
@@ -488,12 +498,14 @@ Styles of each BOX
     padding: 1rem;
     gap: 0.5rem;
     cursor: pointer;
+    border: 1px solid var(--box-color-principal);
 }
 
 .github:hover{
     transition: all 0.3s ease-in-out;
     transform: scale(1.01);
     box-shadow: var(--box-shadow-principal);
+    border: 1px solid #4e4352;
 }
 
 .github i{
@@ -525,12 +537,14 @@ Styles of each BOX
     padding: 1rem;
     gap: 0.5rem;
     cursor: pointer;
+    border: 1px solid var(--box-color-principal);
 }
 
 .projects:hover{
     transition: all 0.3s ease-in-out;
     transform: scale(1.01);
     box-shadow: var(--box-shadow-principal);
+    border: 1px solid #4e4352;
 }
 
 .projects h2{
@@ -548,7 +562,7 @@ Styles of each BOX
 .skills {
     grid-area: skills;
     border-radius: 1rem;
-    background-color: var(--background-principal);
+    background-color: #a7903d;
     color: var(--color-principal);
     padding: 0.5rem;
     display: flex;
@@ -574,18 +588,20 @@ Styles of each BOX
 .contact {
     grid-area: contact;
     border-radius: 1rem;
-    background-color: var(--background-principal);
+    background-color: var(--box-color-principal);
     color: var(--color-principal);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--box-color-principal);
 }
 
 .contact:hover{
     transition: all 0.3s ease-in-out;
     transform: scale(1.02);
     box-shadow: var(--box-shadow-principal);
+    border: 1px solid #4e4352;
 }
 
 .contact h2{
@@ -598,13 +614,14 @@ Styles of each BOX
 .xp {
     grid-area: xp;
     border-radius: 1rem;
-    background-color: var(--background-principal);
+    background-color: var(--box-color-principal);
     color: var(--color-principal);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.2rem;
+    border: 1px solid var(--box-color-principal);
 }   
 
 .xp h2{
