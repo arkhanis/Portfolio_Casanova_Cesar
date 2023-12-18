@@ -209,6 +209,7 @@ h3{
 
 strong{
     font-weight: 800;
+    color: #d5f365;
 }
 
 
@@ -272,6 +273,7 @@ Styles of each BOX
     background-color: var(--box-color-principal);
     color: var(--color-principal);
     border: 1px solid var(--box-color-principal);
+    gap: 1rem;
 }
 
 .languaje:hover{
@@ -293,13 +295,13 @@ Styles of each BOX
 .languaje__op button {
     position: relative;
     padding: 12px 20px;
-    background: #FEC195;
+    background: #d5f365;
     font-size: 17px;
     font-weight: 500;
     color: #181818;
-    border: 1px solid #FEC195;
+    border: 1px solid #d5f365;
     border-radius: 8px;
-    box-shadow: 0 0 0 #fec1958c;
+    box-shadow: 0 0 0 #d5f365;
     transition: all .3s ease-in-out;
     margin: 0.4rem;
   }
@@ -372,7 +374,7 @@ Styles of each BOX
   
   button:hover {
     background: transparent;
-    color: #FEC195;
+    color: #d5f365;
     box-shadow: 0 0 25px #fec1958c;
   }
   
@@ -654,6 +656,7 @@ Styles of each BOX
 .xp h2{
     font-size: 5rem;
     font-weight: 800;
+    color: #d5f365;
 }
 
 .xp h3{
@@ -1011,7 +1014,7 @@ Mobile
     }
 
     .theme-switch {
-        --toggle-size: 15px;
+        --toggle-size: 25px;
       }
 }
 
