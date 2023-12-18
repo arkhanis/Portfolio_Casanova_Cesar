@@ -158,7 +158,10 @@ body {
     font-size: 100%;
     font-family: var(--tipo-principal);
     color: var(--color-principal);
-    background-color: var(--background-principal);
+    background-image: 
+    linear-gradient( rgba(47, 47, 47, 0.859), rgb(21, 21, 21) ),
+    url(../images/gifs/gliphyFondo2.gif);
+    background-size: 120%;
     /* opcional */
     line-height: 1.4em;
     /* opcional */
@@ -179,7 +182,7 @@ Defining GRID
 ***************************************************/
 
 .container {
-    height: 150vh;
+    height: 133vh;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0.5rem;
