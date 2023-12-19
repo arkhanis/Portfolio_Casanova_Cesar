@@ -222,7 +222,7 @@ Styles of each BOX
     grid-area: main;
     border-radius: 1rem;
     background-color: var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.751), rgb(101, 90, 128)), url(../images/gifs/gliphyFondo2.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.455), rgb(101, 90, 128)), url(../images/gifs/gliphyFondo2.gif);
     background-size: 120%;
     background-repeat: no-repeat;
     color: var(--color-principal);
