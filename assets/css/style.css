@@ -230,7 +230,8 @@ Styles of each BOX
     background-color: var(--box-color-principal);
     background-image: 
     linear-gradient( rgba(0, 0, 0, 0.751), rgb(101, 90, 128) ),
-    url(../images/gifs/gliphyFondo2.gif);
+    url(../images/gifs/gliphyFondo2.gif),
+    url(../images/home-cesar.png);
     background-size: 120%;
     background-repeat: no-repeat;
     color: var(--color-principal);
@@ -900,6 +901,7 @@ Mobile
 
 @media only screen and (max-width: 1000px) {
     .container {
+        height: 100vh;
         max-width: 800px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -956,9 +958,9 @@ Mobile
 
 @media only screen and (max-width: 750px) {
     .container {
-        height: 200vh;
+        height: 150vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2fr 0.7fr 1fr 1fr 0.7fr;
+        grid-template-rows: 1.2fr 0.5fr 0.8fr 0.8fr 0.5fr;
         grid-template-areas: 
         "main main main main"
         "languaje languaje theme theme"
@@ -968,7 +970,11 @@ Mobile
     }
     
     .main{
-        background-size:100%;
+        background-size: 150%;
+    }
+
+    .main h2, h3{
+    width: 80%;
     }
 
     .languaje h2{
