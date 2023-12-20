@@ -1,0 +1,432 @@
+/* Tipografía */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
+
+/**************************************************
+RESETS START
+***************************************************/
+
+/* Defining Custom properties */
+
+:root {
+
+    /* Colors */
+    --principal: #d5f365;
+
+    /* Fonts colors */
+    --color-principal: #f0f0f0;
+    --color-secundario: #4e4352;
+
+    /* Tipography */
+    --tipo-principal: Lato, sans-serif;
+    --tipo-secundaria: Inter, sans-serif;
+    /* Background */
+    --background-principal: #1f2023;
+    --background-secundario: #7d5b89;
+
+    --box-color-principal: #323232;
+
+    --box-shadow-principal: 1px 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+/* Resetting the margins and paddings of all labels */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/* Avoiding problems with images */
+img,
+picture,
+video,
+iframe,
+figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    /* opcional */
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* opcional */
+    -o-object-position: center center;
+    object-position: center center;
+}
+
+/* Resetting the links to function as boxes... */
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+/* ...except those found in paragraphs */
+p a {
+    display: inline;
+}
+
+/* Removing dots from <li> */
+li {
+    list-style-type: none;
+}
+
+/* Setting up soft anchors */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Disabling default styles of main text labels */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Avoiding problems with quotes pseudo-elements */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+/* Setting the text I select */
+::-moz-selection {
+    background-color: var(--background-principal);
+    color: var(--color-principal);
+}
+::selection {
+    background-color: var(--background-principal);
+    color: var(--color-principal);
+}
+
+/* Avoiding font and form placement problems */
+form,
+input,
+textarea,
+select,
+button,
+label {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    /* opcional */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Resetting the tables */
+table,
+tr,
+td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Avoiding problems with SVGs */
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+/* Typography for the entire web */
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    color: var(--color-principal);
+    background-image: linear-gradient(rgba(29, 29, 29, 0.68), rgba(0, 0, 0, 0.921)), url(../images/gifs/gliphyFondo2.gif);
+    background-size: 120%;
+    /* opcional */
+    line-height: 1.4em;
+    /* opcional */
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    /* opcional */
+    font-smooth: always;
+    /* opcional */
+    -webkit-font-smoothing: antialiased;
+    /* opcional */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+    font-family: var(--tipo-secundaria);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+h3 {
+    font-family: var(--tipo-principal);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 800;
+    color: #d5f365;
+}
+
+/**************************************************
+Defining Container
+***************************************************/
+
+.container__projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;    
+    grid-gap: 1rem;
+}
+
+
+
+/**************************************************
+Styles 
+***************************************************/
+
+/* === Header ===*/
+
+.header__projects {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: var(--background-secundario);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.header__projects h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--color-principal);
+}
+
+.header__projects i:hover {
+    color: var(--principal);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.header__projects i {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-principal);
+}
+
+/* === Filters ===*/
+
+.main__projects-filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.main__projects-filters-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-secundario);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-principal);
+    color: var(--color-principal);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.main__projects-filters-btn {
+    --btn-default-bg: rgba(41, 41, 41, 0.05);
+    --btn-padding: 15px auto;
+    --btn-hover-bg: rgba(51, 51, 51, 0.214);
+    --btn-transition: .3s;
+    --btn-letter-spacing: .1rem;
+    --btn-animation-duration: 1.2s;
+    --btn-shadow-color: rgba(0, 0, 0, 0.137);
+    --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+    --hover-btn-color: var(--principal);
+    --default-btn-color: var(--color-principal);
+    --font-size: 16px;
+    /* 👆 this field should not be empty */
+    --font-weight: 600;
+    --font-family: var(--tipo-secundaria);
+    /* 👆 this field should not be empty */
+    
+  }
+  
+  /* button settings 👆 */
+  
+  .main__projects-filters-btn {
+    box-sizing: border-box;
+    padding: var(--btn-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-btn-color);
+    font: var(--font-weight) var(--font-size) var(--font-family);
+    background: var(--btn-default-bg);
+    border: none;
+    cursor: pointer;
+    transition: var(--btn-transition);
+    overflow: hidden;
+    box-shadow: var(--btn-shadow);
+  }
+  
+  .main__projects-filters-btn span {
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    box-sizing: border-box;
+    position: relative;
+    background: inherit;
+  }
+  
+  .main__projects-filters-btn span::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+  }
+  
+  .main__projects-filters-btn:hover, .ui-btn:focus {
+    background: var(--btn-hover-bg);
+  }
+  
+  .main__projects-filters-btn:hover span, .ui-btn:focus span {
+    color: var(--hover-btn-color);
+  }
+  
+  .main__projects-filters-btn:hover span::before, .ui-btn:focus span::before {
+    animation: chitchat linear both var(--btn-animation-duration);
+  }
+  
+  @keyframes chitchat {
+    0% {
+      content: "#";
+    }
+  
+    5% {
+      content: ".";
+    }
+  
+    10% {
+      content: "^{";
+    }
+  
+    15% {
+      content: "-!";
+    }
+  
+    20% {
+      content: "#$_";
+    }
+  
+    25% {
+      content: "№:0";
+    }
+  
+    30% {
+      content: "#{+.";
+    }
+  
+    35% {
+      content: "@}-?";
+    }
+  
+    40% {
+      content: "?{4@%";
+    }
+  
+    45% {
+      content: "=.,^!";
+    }
+  
+    50% {
+      content: "?2@%";
+    }
+  
+    55% {
+      content: "\;1}]";
+    }
+  
+    60% {
+      content: "?{%:%";
+      right: 0;
+    }
+  
+    65% {
+      content: "|{f[4";
+      right: 0;
+    }
+  
+    70% {
+      content: "{4%0%";
+      right: 0;
+    }
+  
+    75% {
+      content: "'1_0<";
+      right: 0;
+    }
+  
+    80% {
+      content: "{0%";
+      right: 0;
+    }
+  
+    85% {
+      content: "]>'";
+      right: 0;
+    }
+  
+    90% {
+      content: "4";
+      right: 0;
+    }
+  
+    95% {
+      content: "2";
+      right: 0;
+    }
+  
+    100% {
+      content: "";
+      right: 0;
+    }
+  }
