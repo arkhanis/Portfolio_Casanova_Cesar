@@ -158,7 +158,7 @@ body {
     font-size: 100%;
     font-family: var(--tipo-principal);
     color: var(--color-principal);
-    background-image: linear-gradient(rgba(47, 47, 47, 0.859), rgb(21, 21, 21)), url(../images/gifs/gliphyFondo2.gif);
+    background-image: linear-gradient(rgb(29, 29, 29), rgba(0, 0, 0, 0.921)), url(../images/gifs/gliphyFondo2.gif);
     background-size: 120%;
     /* opcional */
     line-height: 1.4em;
@@ -222,7 +222,7 @@ Styles of each BOX
     grid-area: main;
     border-radius: 1rem;
     background-color: var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.455), rgb(101, 90, 128)), url(../images/gifs/gliphyFondo2.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.336), rgb(101, 90, 128)), url(../images/gifs/gliphyFondo2.gif);
     background-size: 120%;
     background-repeat: no-repeat;
     color: var(--color-principal);
@@ -278,7 +278,7 @@ h3 {
     color: var(--color-principal);
     border: 1px solid var(--box-color-principal);
     gap: 1rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.592), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -459,7 +459,7 @@ button:hover .star-6 {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.592), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -605,6 +605,64 @@ button:hover .star-6 {
     flex-wrap: wrap;
 }
 
+.uiverse {
+    position: relative;
+    color: var(--color-principal);
+    border-radius: 10px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .uiverse:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  svg:hover span,
+  svg:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .uiverse:hover,
+  .uiverse:hover .tooltip,
+  .uiverse:hover .tooltip::before {
+    background: linear-gradient(320deg, rgb(97, 75, 129), rgb(37, 10, 127));
+    color: #d5f365;
+  }
+
 .skills i {
     font-size: 4rem;
 }
@@ -621,7 +679,7 @@ button:hover .star-6 {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.592), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -656,14 +714,26 @@ button:hover .star-6 {
     align-items: center;
     gap: 1.2rem;
     border: 1px solid var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.595), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
+}
+
+.xp:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: var(--box-shadow-principal);
+    border: 1px solid #4e4352;
 }
 
 .xp h2 {
     font-size: 5rem;
     font-weight: 800;
     color: #d5f365;
+}
+
+.xp h2:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
 }
 
 .xp h3 {
