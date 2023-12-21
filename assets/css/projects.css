@@ -247,12 +247,65 @@ Styles
 
 /* === Filters ===*/
 
-.main__projects-filters__filter{
+.radio-inputs {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: var(--background-secundario);
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
     margin: 1rem 0;
+    padding: 0.25rem;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+.radio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: var(--background-secundario);
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    margin: 1rem 0.25rem;
+    padding: 0.25rem;
+    font-size: 14px;
 }
+
+  .radio-inputs .radio:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .25rem 0.5rem;
+    color: var(--color-principal);
+    transition: all .3s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: var(--color-principal);
+    font-weight: 600;
+    color: var(--background-principal);
+  }
 
 /* === Cards ===*/
 

@@ -22,26 +22,31 @@
             <div class="main__projects-filters">
 
                 <div class="main__projects-filters__filter">
-                    <p>Filter</p>
-                    <select name="filter" id="filter">
-                        <option value="all">All</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="js">JavaScript</option>
-                        <option value="php">PHP</option>
-                        <option value="sql">SQL</option>
-                    </select>
+                    <div class="radio-inputs">
+                        <label class="radio">
+                            <input type="radio" name="radio" checked="">
+                            <span class="name">All</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio">
+                            <span class="name">Recommended</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio">
+                            <span class="name">Front-End</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio">
+                            <span class="name">Back-End</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio">
+                            <span class="name">Full Stack</span>
+                        </label>
+
+                    </div>
                 </div>
 
-                <div class="main__projects-filters__filter">
-                    <p>Sort</p>
-                    <select name="sort" id="sort">
-                        <option value="newest">Newest</option>
-                        <option value="oldest">Oldest</option>
-                        <option value="a-z">A-Z</option>
-                        <option value="z-a">Z-A</option>
-                    </select>
-                </div>
             </div>
 
             <div class="card__container">
