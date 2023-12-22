@@ -273,7 +273,7 @@ Styles
     box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
     margin: 1rem 0.25rem;
     padding: 0.25rem;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
   .radio-inputs .radio:not(:last-child) {
@@ -283,6 +283,7 @@ Styles
   .radio-inputs .radio {
     flex: 1 1 auto;
     text-align: center;
+    cursor: pointer;
   }
   
   .radio-inputs .radio input {
@@ -305,13 +306,15 @@ Styles
     background-color: var(--color-principal);
     font-weight: 600;
     color: var(--background-principal);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+
   }
 
 /* === Cards ===*/
 
 .card__container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 1rem;
     justify-items: center;
     align-items: center;
@@ -320,16 +323,21 @@ Styles
 
 .flip-card {
     background-color: transparent;
-    width: 350px;
-    height: 350px;
+    width: 360px;
+    height: 360px;
     perspective: 1100px;
     font-family: Inter, sans-serif;
   }
   
+.flip-card-front{
+    position: relative;
+}
+
   .title {
     font-size: 1.5em;
     font-weight: 900;
-    text-align: center;
+    position: absolute;
+    right: 30%;
     margin: 0;
     color: var(--color-secundario);
   }

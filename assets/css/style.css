@@ -222,7 +222,7 @@ Styles of each BOX
     grid-area: main;
     border-radius: 1rem;
     background-color: var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.336), rgb(101, 90, 128)), url(../images/gifs/gliphyFondo2.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.682), rgb(101, 90, 128)), url(../images/gifs/gliphyFondo2.gif);
     background-size: 120%;
     background-repeat: no-repeat;
     color: var(--color-principal);
@@ -278,7 +278,7 @@ h3 {
     color: var(--color-principal);
     border: 1px solid var(--box-color-principal);
     gap: 1rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.592), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.900), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -459,7 +459,7 @@ button:hover .star-6 {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.592), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.900), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -679,7 +679,7 @@ button:hover .star-6 {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.592), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.900), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -714,7 +714,7 @@ button:hover .star-6 {
     align-items: center;
     gap: 1.2rem;
     border: 1px solid var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.595), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.900), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -1015,7 +1015,7 @@ Mobile
 
 @media only screen and (max-width: 1100px) {
     .container {
-        height: 140vh;
+        height: 100vh;
         max-width: 800px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -1078,9 +1078,9 @@ Mobile
 
 @media only screen and (max-width: 750px) {
     .container {
-        height: 200vh;
+        height: 160vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1.8fr 0.7fr 0.7fr 0.7fr 0.7fr;
+        grid-template-rows: 2fr 0.7fr 0.7fr 0.7fr 0.7fr;
         grid-template-areas:
             "main main main main"
             "languaje languaje theme theme"
