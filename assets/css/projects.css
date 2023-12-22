@@ -9,34 +9,33 @@ RESETS START
 /* Defining Custom properties */
 
 :root {
+  /* Colors */
+  --principal: #d5f365;
 
-    /* Colors */
-    --principal: #d5f365;
+  /* Fonts colors */
+  --color-principal: #f0f0f0;
+  --color-secundario: #4e4352;
 
-    /* Fonts colors */
-    --color-principal: #f0f0f0;
-    --color-secundario: #4e4352;
+  /* Tipography */
+  --tipo-principal: Lato, sans-serif;
+  --tipo-secundaria: Inter, sans-serif;
+  /* Background */
+  --background-principal: #1f2023;
+  --background-secundario: #7d5b89;
 
-    /* Tipography */
-    --tipo-principal: Lato, sans-serif;
-    --tipo-secundaria: Inter, sans-serif;
-    /* Background */
-    --background-principal: #1f2023;
-    --background-secundario: #7d5b89;
+  --box-color-principal: #323232;
 
-    --box-color-principal: #323232;
-
-    --box-shadow-principal: 1px 10px 20px rgba(0, 0, 0, 0.9);
+  --box-shadow-principal: 1px 10px 20px rgba(0, 0, 0, 0.9);
 }
 
 /* Resetting the margins and paddings of all labels */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
 }
 
 /* Avoiding problems with images */
@@ -45,38 +44,38 @@ picture,
 video,
 iframe,
 figure {
-    max-width: 100%;
-    width: 100%;
-    display: block;
-    /* opcional */
-    -o-object-fit: cover;
-    object-fit: cover;
-    /* opcional */
-    -o-object-position: center center;
-    object-position: center center;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+  object-position: center center;
 }
 
 /* Resetting the links to function as boxes... */
 a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    font-size: inherit;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
 }
 
 /* ...except those found in paragraphs */
 p a {
-    display: inline;
+  display: inline;
 }
 
 /* Removing dots from <li> */
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* Setting up soft anchors */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Disabling default styles of main text labels */
@@ -95,11 +94,11 @@ i,
 b,
 u,
 em {
-    font-size: 1em;
-    font-weight: inherit;
-    font-style: inherit;
-    text-decoration: none;
-    color: inherit;
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Avoiding problems with quotes pseudo-elements */
@@ -107,18 +106,18 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
-    content: none;
+  content: "";
+  content: none;
 }
 
 /* Setting the text I select */
 ::-moz-selection {
-    background-color: var(--background-principal);
-    color: var(--color-principal);
+  background-color: var(--background-principal);
+  color: var(--color-principal);
 }
 ::selection {
-    background-color: var(--background-principal);
-    color: var(--color-principal);
+  background-color: var(--background-principal);
+  color: var(--color-principal);
 }
 
 /* Avoiding font and form placement problems */
@@ -128,73 +127,73 @@ textarea,
 select,
 button,
 label {
-    font-family: inherit;
-    font-size: inherit;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    background-color: transparent;
-    color: inherit;
-    display: block;
-    /* opcional */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 /* Resetting the tables */
 table,
 tr,
 td {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Avoiding problems with SVGs */
 svg {
-    width: 100%;
-    display: block;
-    fill: currentColor;
+  width: 100%;
+  display: block;
+  fill: currentColor;
 }
 
 /* Typography for the entire web */
 body {
-    min-height: 100vh;
-    font-size: 100%;
-    font-family: var(--tipo-principal);
-    color: var(--color-principal);
-    background-image: linear-gradient(rgba(29, 29, 29, 0.68), rgba(0, 0, 0, 0.921)), url(../images/gifs/gliphyFondo2.gif);
-    background-size: 120%;
-    /* opcional */
-    line-height: 1.4em;
-    /* opcional */
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    /* opcional */
-    font-smooth: always;
-    /* opcional */
-    -webkit-font-smoothing: antialiased;
-    /* opcional */
-    -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--color-principal);
+  background-image: linear-gradient(rgba(29, 29, 29, 0.68), rgba(0, 0, 0, 0.921)), url(../images/gifs/gliphyFondo2.gif);
+  background-size: 120%;
+  /* opcional */
+  line-height: 1.4em;
+  /* opcional */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h2 {
-    font-family: var(--tipo-secundaria);
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: 2rem;
+  font-family: var(--tipo-secundaria);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 2rem;
 }
 
 h3 {
-    font-family: var(--tipo-principal);
-    font-size: 1.3rem;
-    font-weight: 400;
+  font-family: var(--tipo-principal);
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 strong {
-    font-weight: 800;
-    color: #d5f365;
+  font-weight: 800;
+  color: #d5f365;
 }
 
 /**************************************************
@@ -202,13 +201,11 @@ Defining Container
 ***************************************************/
 
 .container__projects {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.5rem;    
-    grid-gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  grid-gap: 1rem;
 }
-
-
 
 /**************************************************
 Styles 
@@ -217,167 +214,206 @@ Styles
 /* === Header ===*/
 
 .header__projects {
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color: var(--background-secundario);
-    padding: 1rem 2rem;
-    border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgba(39, 66, 218, 0.542), rgb(101, 90, 128));
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
 
 .header__projects h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2rem;
-    color: var(--color-principal);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--color-principal);
 }
 
 .header__projects i:hover {
-    color: var(--principal);
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
+  color: var(--principal);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 .header__projects i {
-    font-size: 2rem;
-    font-weight: 300;
-    color: var(--color-principal);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-principal);
 }
 
 /* === Filters ===*/
 
-.radio-inputs {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 0.5rem;
-    background-color: var(--background-secundario);
-    box-sizing: border-box;
-    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
-    margin: 1rem 0;
-    padding: 0.25rem;
-    width: 100%;
-    font-size: 14px;
-  }
-  
-.radio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    background-color: var(--background-secundario);
-    box-sizing: border-box;
-    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
-    margin: 1rem 0.25rem;
-    padding: 0.25rem;
-    font-size: 1rem;
+.portfolio_filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
 }
 
-  .radio-inputs .radio:not(:last-child) {
-    margin-right: 0.5rem;
+.portfolio_container li {
+  display: inline-block;
+  margin: 15px 5px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(38, 54, 145, 0.542), rgb(101, 90, 128));
+  color: var(--color-principal);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-  .radio-inputs .radio {
-    flex: 1 1 auto;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .radio-inputs .radio input {
-    display: none;
-  }
-  
-  .radio-inputs .radio .name {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    border: none;
-    padding: .25rem 0.5rem;
-    color: var(--color-principal);
-    transition: all .3s ease-in-out;
-  }
-  
-  .radio-inputs .radio input:checked + .name {
-    background-color: var(--color-principal);
-    font-weight: 600;
-    color: var(--background-principal);
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-
-  }
+.portfolio_container li:hover,
+.filter.active {
+  background-image: linear-gradient(rgba(39, 66, 218, 0.542), rgb(101, 90, 128));
+  color: var(--principal);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
 
 /* === Cards ===*/
 
-.card__container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    grid-gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    margin: 1.5rem 0;
+.portfolio_wrap-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  position: relative;
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 360px;
-    height: 360px;
-    perspective: 1100px;
-    font-family: Inter, sans-serif;
-  }
-  
-.flip-card-front{
-    position: relative;
+.portfolio_item {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-principal);
+  transition: all 0.3s ease-in-out;
 }
 
-  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    position: absolute;
-    right: 30%;
-    margin: 0;
-    color: var(--color-secundario);
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.679);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid var(--background-secundario);
-    border-radius: 1rem;
-  }
-  
-  .flip-card-front {
-    background: linear-gradient(120deg, rgb(224, 196, 255) 60%, rgb(255, 231, 222) 88%,
-       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
-    color: var(--background-secundario);
-  }
-  
-  .flip-card-back {
-    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
-       bisque 40%, rgb(255, 185, 160) 78%);
-    color: white;
-    transform: rotateY(180deg);
-  }
+.portfolio_item:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+} 
+
+.portfolio_wrap{
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio_wrap img {
+  border-radius: 10px;
+}
+
+.portfolio_wrap::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+  border-left: 3px solid rgba(0, 0, 0, 0.1);
+  transition: .4s;
+  transform: scale(0)
+}
+
+.portfolio_wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  border-right: 3px solid rgba(0, 0, 0, 0.1);
+  transition: .4s;
+  transform: scale(0)
+}
+
+.portfolio_wrap:hover::before,
+.portfolio_wrap:hover::after {
+  transform: scale(1)
+}
+
+.portfolio_info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: rgba(255, 255, 255, 0.681);
+  transform: scale(0);
+  transition: .4s;
+  color: #333;
+}
+
+.portfolio_wrap:hover .portfolio_info{
+  transform: scale(1);
+}
+
+.portfolio_info h4{
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.portfolio_info p{
+  text-transform: uppercase;
+  font-size: 0.9rem;
+
+}
+
+.portfolio_skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.portfolio_skills h4 {
+  display: inline-block;
+  padding: .2rem .5rem;
+  background-color: #666;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-principal);
+}
+
+.portfolio_links a{
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: .2rem .5rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(38, 54, 145, 0.542), rgb(101, 90, 128));
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: var(--color-principal);
+} 
+
+.portfolio_links a:hover{
+  background-image: linear-gradient(rgba(39, 66, 218, 0.542), rgb(101, 90, 128));
+  color: var(--principal);
+  font-weight: 700;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio_links i {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-principal);
+}
