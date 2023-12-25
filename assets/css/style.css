@@ -21,7 +21,7 @@ RESETS START
 
     --box-color-principal: #323232;
 
-    --box-shadow-principal: 1px 10px 20px rgba(0, 0, 0, 0.9);
+    --box-shadow-principal: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Resetting the margins and paddings of all labels */
@@ -158,7 +158,7 @@ body {
     font-size: 100%;
     font-family: var(--tipo-principal);
     color: var(--color-principal);
-    background-image: linear-gradient(rgb(29, 29, 29), rgba(0, 0, 0, 0.921)), url(../images/gifs/gliphyFondo2.gif);
+    background-image: linear-gradient(rgba(230, 230, 230, 0.682), rgb(172, 172, 172)), url(../images/gifs/gliphyFondo2.gif);
     background-size: 120%;
     /* opcional */
     line-height: 1.4em;
@@ -1015,7 +1015,7 @@ Mobile
 
 @media only screen and (max-width: 1100px) {
     .container {
-        height: 100vh;
+        height: 135vh;
         max-width: 800px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -1078,9 +1078,9 @@ Mobile
 
 @media only screen and (max-width: 750px) {
     .container {
-        height: 160vh;
+        height: 190vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2fr 0.7fr 0.7fr 0.7fr 0.7fr;
+        grid-template-rows: 2.2fr 0.7fr 0.7fr 0.7fr 0.7fr;
         grid-template-areas:
             "main main main main"
             "languaje languaje theme theme"
@@ -1102,7 +1102,7 @@ Mobile
 
     .main h2,
     h3 {
-        width: 80%;
+        width: 90%;
     }
 
 
@@ -1132,7 +1132,7 @@ Mobile
     }
 
     .skills i {
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
 
     .github h2 {
