@@ -218,7 +218,7 @@ Styles
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(rgba(39, 66, 218, 0.542), rgb(101, 90, 128));
+  background-image: linear-gradient(rgba(82, 95, 162, 0.836), rgb(159, 140, 208));
   padding: 1rem 2rem;
   border-radius: 10px;
 }
@@ -247,6 +247,7 @@ Styles
 .portfolio_filters {
   display: flex;
   justify-content: center;
+  column-gap: 10px;
   align-items: center;
   margin-bottom: 70px;
 }
@@ -256,7 +257,7 @@ Styles
   margin: 15px 5px;
   padding: 5px 20px;
   border-radius: 10px;
-  background-image: linear-gradient(rgba(38, 54, 145, 0.542), rgb(101, 90, 128));
+  background-image: linear-gradient(rgba(82, 95, 162, 0.836), rgb(159, 140, 208));
   color: var(--color-principal);
   font-size: 1rem;
   text-transform: uppercase;
@@ -267,7 +268,7 @@ Styles
 
 .portfolio_container li:hover,
 .filter.active {
-  background-image: linear-gradient(rgba(39, 66, 218, 0.542), rgb(101, 90, 128));
+  background-image: linear-gradient(rgba(65, 76, 132, 0.884), rgb(159, 140, 208));
   color: var(--principal);
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
@@ -277,7 +278,7 @@ Styles
 
 .portfolio_wrap-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   position: relative;
 }
@@ -288,11 +289,6 @@ Styles
   box-shadow: var(--box-shadow-principal);
   transition: all 0.3s ease-in-out;
 }
-
-.portfolio_item:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-} 
 
 .portfolio_wrap{
   position: relative;
@@ -312,8 +308,8 @@ Styles
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border-top: 3px solid rgba(0, 0, 0, 0.1);
-  border-left: 3px solid rgba(0, 0, 0, 0.1);
+  border-top: 3px solid rgba(214, 214, 214, 0.7);
+  border-left: 3px solid rgba(214, 214, 214, 0.7);
   transition: .4s;
   transform: scale(0)
 }
@@ -326,8 +322,8 @@ Styles
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-  border-right: 3px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(214, 214, 214, 0.7);
+  border-right: 3px solid rgba(214, 214, 214, 0.7);
   transition: .4s;
   transform: scale(0)
 }
@@ -348,10 +344,11 @@ Styles
   align-items: center;
   flex-direction: column;
   row-gap: 10px;
-  background-color: rgba(255, 255, 255, 0.681);
+  background-color: rgba(69, 47, 132, 0.882);
   transform: scale(0);
   transition: .4s;
-  color: #333;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .portfolio_wrap:hover .portfolio_info{
@@ -366,9 +363,9 @@ Styles
 }
 
 .portfolio_info p{
-  text-transform: uppercase;
-  font-size: 0.9rem;
-
+  font-size: 1rem;
+  width: 80%;
+  text-align: center;
 }
 
 .portfolio_skills{
@@ -383,11 +380,11 @@ Styles
 .portfolio_skills h4 {
   display: inline-block;
   padding: .2rem .5rem;
-  background-color: #666;
+  background-color: #d5d5d5;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--color-principal);
+  color: var(--color-secundario);
 }
 
 .portfolio_links a{
@@ -395,25 +392,70 @@ Styles
   font-size: 1.1rem;
   font-weight: 500;
   padding: .2rem .5rem;
-  margin: 0.5rem;
+  margin: 3rem 0.5rem;
   border-radius: 10px;
-  background-image: linear-gradient(rgba(38, 54, 145, 0.542), rgb(101, 90, 128));
+  background-image: linear-gradient(#d5f365, #7b9c05);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  color: var(--color-principal);
 } 
 
 .portfolio_links a:hover{
-  background-image: linear-gradient(rgba(39, 66, 218, 0.542), rgb(101, 90, 128));
+  background-image: linear-gradient(#7b9c05, #d5f365);
   color: var(--principal);
   font-weight: 700;
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
 
+
 .portfolio_links i {
-  display: inline-block;
   font-size: 1.8rem;
   font-weight: 500;
-  color: var(--color-principal);
+  color: var(--color-secundario);
+}
+
+
+@media screen and (max-width: 992px) {
+  .portfolio_wrap-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .portfolio_item {
+    width: 100%;
+  }
+
+  .portfolio_item:hover {
+    transform: scale(1);
+  }
+
+  .portfolio_info p{
+    width: 90%;
+  }
+
+  .portfolio_links a{
+    margin: 1rem 0.5rem;
+  }
+
+  .portfolio_links i {
+    font-size: 1.5rem;
+  }
+
+  .portfolio_info h4{
+    font-size: 1.5rem;
+  }
+
+  .portfolio_info p{
+    font-size: 0.9rem;
+  }
+
+  .portfolio_skills h4 {
+    font-size: 1rem;
+  }
+
+  .portfolio_container li {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+
 }
