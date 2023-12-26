@@ -23,7 +23,7 @@ RESETS START
     --principal2: #ae93fb;
     --principal3: #d9c8e7;
 
-    --box-shadow-principal: 1px 0px 20px rgba(78, 78, 78, 0.539);
+    --box-shadow-principal: 1px 0px 10px rgba(78, 78, 78, 0.539);
 }
 
 /* Resetting the margins and paddings of all labels */
