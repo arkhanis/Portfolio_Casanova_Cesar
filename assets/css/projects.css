@@ -288,7 +288,6 @@ Styles
 .portfolio_item {
   position: relative;
   border-radius: 10px;
-  box-shadow: var(--box-shadow-principal);
   transition: all 0.3s ease-in-out;
 }
 
@@ -365,8 +364,6 @@ Styles
 }
 
 .portfolio_info p{
-  display: inline-block;
-  background-color: #4e43528d;
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: 1rem;
