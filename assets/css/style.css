@@ -16,12 +16,18 @@ RESETS START
     --tipo-principal: Lato, sans-serif;
     --tipo-secundaria: Inter, sans-serif;
     /* Background */
-    --background-principal: #1f2023;
-    --background-secundario: #9b76a9;
+    --background-principal: #515151;
+    --box-color-principal: #131313;
 
-    --box-color-principal: #323232;
+    --principal: #7837e4;
+    --principal2: #ae93fb;
+    --principal3: #d9c8e7;
 
-    --box-shadow-principal: 1px 5px 10px rgba(0, 0, 0, 0.5);
+
+
+
+
+    --box-shadow-principal: 1px 0px 20px rgba(171, 171, 171, 0.539);
 }
 
 /* Resetting the margins and paddings of all labels */
@@ -158,7 +164,7 @@ body {
     font-size: 100%;
     font-family: var(--tipo-principal);
     color: var(--color-principal);
-    background-color: #272727;
+    background-color: var(--background-principal);
     background-size: 120%;
     /* opcional */
     line-height: 1.4em;
@@ -179,7 +185,6 @@ Defining GRID
 ***************************************************/
 
 .container {
-    height: 140vh;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0.5rem;
@@ -209,7 +214,7 @@ h3 {
 
 strong {
     font-weight: 800;
-    color: #d5f365;
+    color: var(--principal2);
 }
 
 /**************************************************
@@ -222,7 +227,6 @@ Styles of each BOX
     grid-area: main;
     border-radius: 1rem;
     background-color: var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.682), rgb(101, 90, 128)), url(../images/gifs/gliphyFondo2.gif);
     background-size: 120%;
     background-repeat: no-repeat;
     color: var(--color-principal);
@@ -278,7 +282,6 @@ h3 {
     color: var(--color-principal);
     border: 1px solid var(--box-color-principal);
     gap: 1rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.900), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -301,11 +304,11 @@ h3 {
 .languaje__op button {
     position: relative;
     padding: 12px 20px;
-    background: #d5f365;
+    background: var(--principal2);
     font-size: 17px;
     font-weight: 500;
     color: #181818;
-    border: 1px solid #d5f365;
+    border: 1px solid var(--principal);
     border-radius: 8px;
     box-shadow: 0 0 0 #d5f365;
     transition: all 0.3s ease-in-out;
@@ -380,7 +383,7 @@ h3 {
 
 button:hover {
     background: transparent;
-    color: #d5f365;
+    color: var(--principal2);
     box-shadow: 0 0 25px #fec1958c;
 }
 
@@ -459,7 +462,6 @@ button:hover .star-6 {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.900), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -659,8 +661,8 @@ button:hover .star-6 {
   .uiverse:hover,
   .uiverse:hover .tooltip,
   .uiverse:hover .tooltip::before {
-    background: linear-gradient(320deg, rgb(97, 75, 129), rgb(37, 10, 127));
-    color: #d5f365;
+    background: linear-gradient(320deg, rgb(97, 75, 129), rgb(85, 67, 154));
+    color: var(--color-principal);
   }
 
 .skills i {
@@ -679,7 +681,6 @@ button:hover .star-6 {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.900), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -698,7 +699,7 @@ button:hover .star-6 {
 .contact h2 {
     font-size: 5rem;
     font-weight: 800;
-    color: #d5f365;
+    color: var(--principal2);
 }
 
 /* === Experience Box ===*/
@@ -714,7 +715,6 @@ button:hover .star-6 {
     align-items: center;
     gap: 1.2rem;
     border: 1px solid var(--box-color-principal);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.900), rgb(75, 65, 95)), url(../images/gifs/gliphyFondo.gif);
     background-size: 150%;
 }
 
@@ -728,7 +728,7 @@ button:hover .star-6 {
 .xp h2 {
     font-size: 5rem;
     font-weight: 800;
-    color: #d5f365;
+    color: var(--principal2);
 }
 
 .xp h2:hover {
@@ -1015,7 +1015,6 @@ Mobile
 
 @media only screen and (max-width: 1100px) {
     .container {
-        height: 135vh;
         max-width: 800px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -1078,7 +1077,6 @@ Mobile
 
 @media only screen and (max-width: 750px) {
     .container {
-        height: 190vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 2.2fr 0.7fr 0.7fr 0.7fr 0.7fr;
         grid-template-areas:

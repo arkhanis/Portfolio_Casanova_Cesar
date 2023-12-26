@@ -10,7 +10,9 @@ RESETS START
 
 :root {
   /* Colors */
-  --principal: #d5f365;
+  --principal: #7837e4;
+  --principal2: #ae93fb;
+  --principal3: #d9c8e7;
 
   /* Fonts colors */
   --color-principal: #f0f0f0;
@@ -25,7 +27,7 @@ RESETS START
 
   --box-color-principal: #323232;
 
-  --box-shadow-principal: 1px 10px 20px rgba(0, 0, 0, 0.9);
+  --box-shadow-principal: 1px 0px 20px rgba(171, 171, 171, 0.539);
 }
 
 /* Resetting the margins and paddings of all labels */
@@ -231,7 +233,7 @@ Styles
 }
 
 .header__projects i:hover {
-  color: var(--principal);
+  color: var(--principal3);
   transition: all 0.3s ease-in-out;
   transform: scale(1.1);
 }
@@ -268,8 +270,8 @@ Styles
 
 .portfolio_container li:hover,
 .filter.active {
-  background-image: linear-gradient(rgba(65, 76, 132, 0.884), rgb(159, 140, 208));
-  color: var(--principal);
+  background-image: linear-gradient(rgb(159, 140, 208), rgba(65, 76, 132, 0.884));
+  color: var(--color-principal);
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
@@ -344,7 +346,7 @@ Styles
   align-items: center;
   flex-direction: column;
   row-gap: 10px;
-  background-color: rgba(69, 47, 132, 0.882);
+  background-color: #3c3c3ce2;
   transform: scale(0);
   transition: .4s;
   border-radius: 10px;
@@ -363,7 +365,11 @@ Styles
 }
 
 .portfolio_info p{
+  display: inline-block;
+  background-color: #4e43528d;
   font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
   width: 80%;
   text-align: center;
 }
@@ -391,17 +397,18 @@ Styles
   display: inline-block;
   font-size: 1.1rem;
   font-weight: 500;
-  padding: .2rem .5rem;
+  padding: .4rem .9rem;
   margin: 3rem 0.5rem;
   border-radius: 10px;
-  background-image: linear-gradient(#d5f365, #7b9c05);
+  border: 0.5px solid var(--color-principal);
+  background-image: linear-gradient(var(--principal), var(--principal2));
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 } 
 
 .portfolio_links a:hover{
-  background-image: linear-gradient(#7b9c05, #d5f365);
-  color: var(--principal);
+  background-image: linear-gradient(var(--principal2), var(--principal));
+  color: var(--color-principal);
   font-weight: 700;
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
@@ -411,7 +418,7 @@ Styles
 .portfolio_links i {
   font-size: 1.8rem;
   font-weight: 500;
-  color: var(--color-secundario);
+  color: var(--color-principal);
 }
 
 
