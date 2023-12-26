@@ -202,8 +202,8 @@ h1 {
     line-height: 55px;
     background: #ccc;
     font-family: system-ui;
-    background: linear-gradient(#bdfbf5, #03dac5 );
-    -webkit-background-clip: text;
+    background: linear-gradient(#e0fdfa, #03dac5 );
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
