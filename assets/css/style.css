@@ -16,18 +16,14 @@ RESETS START
     --tipo-principal: Lato, sans-serif;
     --tipo-secundaria: Inter, sans-serif;
     /* Background */
-    --background-principal: #515151;
-    --box-color-principal: #131313;
+    --background-principal: #0c0c0e;
+    --box-color-principal: #222222;
 
     --principal: #7837e4;
     --principal2: #ae93fb;
     --principal3: #d9c8e7;
 
-
-
-
-
-    --box-shadow-principal: 1px 0px 20px rgba(171, 171, 171, 0.539);
+    --box-shadow-principal: 1px 0px 20px rgba(78, 78, 78, 0.539);
 }
 
 /* Resetting the margins and paddings of all labels */
@@ -199,6 +195,18 @@ Defining GRID
     grid-gap: 1rem;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    line-height: 55px;
+    background: #ccc;
+    font-family: system-ui;
+    background: linear-gradient(#bdfbf5, #03dac5 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 h2 {
     font-family: var(--tipo-secundaria);
     font-size: 2.2rem;
@@ -235,7 +243,7 @@ Styles of each BOX
     align-items: end;
     position: relative;
     overflow: hidden;
-    border: 1px solid var(--box-color-principal);
+    border: 1px solid #5555;
 }
 
 .main__title img {
@@ -283,6 +291,7 @@ h3 {
     border: 1px solid var(--box-color-principal);
     gap: 1rem;
     background-size: 150%;
+    border: 1px solid #5555;
 }
 
 .languaje:hover {
@@ -463,6 +472,7 @@ button:hover .star-6 {
     justify-content: center;
     border: 1px solid var(--box-color-principal);
     background-size: 150%;
+    border: 1px solid #5555;
 }
 
 .theme:hover {
@@ -483,6 +493,7 @@ button:hover .star-6 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 1px solid #5555;
 }
 
 .linkedin:hover {
@@ -514,7 +525,7 @@ button:hover .star-6 {
     padding: 1rem;
     gap: 0.5rem;
     cursor: pointer;
-    border: 1px solid var(--box-color-principal);
+    border: 1px solid #5555;
 }
 
 .github:hover {
@@ -554,7 +565,7 @@ button:hover .star-6 {
     padding: 1rem;
     gap: 0.5rem;
     cursor: pointer;
-    border: 1px solid var(--box-color-principal);
+    border: 1px solid #5555;
 }
 
 .projects:hover {
@@ -597,6 +608,7 @@ button:hover .star-6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid #5555;
 }
 
 .skills__icons {
@@ -618,9 +630,9 @@ button:hover .star-6 {
     flex-direction: column;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .tooltip {
+}
+
+.tooltip {
     position: absolute;
     top: 0;
     font-size: 14px;
@@ -632,9 +644,9 @@ button:hover .star-6 {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .tooltip::before {
+}
+
+.tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -644,26 +656,26 @@ button:hover .star-6 {
     left: 50%;
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .uiverse:hover .tooltip {
+}
+
+.uiverse:hover .tooltip {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-  }
-  
-  svg:hover span,
-  svg:hover .tooltip {
+}
+
+svg:hover span,
+svg:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  .uiverse:hover,
-  .uiverse:hover .tooltip,
-  .uiverse:hover .tooltip::before {
+}
+
+.uiverse:hover,
+.uiverse:hover .tooltip,
+.uiverse:hover .tooltip::before {
     background: linear-gradient(320deg, rgb(97, 75, 129), rgb(85, 67, 154));
     color: var(--color-principal);
-  }
+}
 
 .skills i {
     font-size: 4rem;
@@ -682,6 +694,7 @@ button:hover .star-6 {
     justify-content: center;
     border: 1px solid var(--box-color-principal);
     background-size: 150%;
+    border: 1px solid #5555;
 }
 
 .contact:hover {
@@ -714,7 +727,7 @@ button:hover .star-6 {
     justify-content: center;
     align-items: center;
     gap: 1.2rem;
-    border: 1px solid var(--box-color-principal);
+    border: 1px solid #5555;
     background-size: 150%;
 }
 
@@ -1102,7 +1115,6 @@ Mobile
     h3 {
         width: 90%;
     }
-
 
     .languaje h2 {
         font-size: 1.5rem;

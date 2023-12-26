@@ -164,7 +164,7 @@ body {
   font-size: 100%;
   font-family: var(--tipo-principal);
   color: var(--color-principal);
-  background-image: linear-gradient(rgba(29, 29, 29, 0.68), rgba(0, 0, 0, 0.921)), url(../images/gifs/gliphyFondo2.gif);
+  background-color: var(--background-principal);
   background-size: 120%;
   /* opcional */
   line-height: 1.4em;
