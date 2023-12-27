@@ -425,7 +425,7 @@ h3 {
     line-height: 3rem;
 }
 
-.projects h3 {
+.projects__description {
     font-size: 1.5rem;
     line-height: 2rem;
 }
@@ -1016,7 +1016,7 @@ Mobile
             line-height: 2rem;
         }
 
-        .projects h3 {
+        .projects__description {
             font-size: 1.2rem;
             line-height: 1.2rem;
         }
