@@ -26,6 +26,24 @@ RESETS START
     --box-shadow-principal: 1px 0px 10px rgba(78, 78, 78, 0.539);
 }
 
+:lightMode {
+    /* Fonts colors */
+    --color-principal: #1e1e1e;
+    --color-secundario: #4e4352;
+    /* Tipography */
+    --tipo-principal: Lato, sans-serif;
+    --tipo-secundaria: Inter, sans-serif;
+    /* Background */
+    --background-principal: #cecece;
+    --box-color-principal: #ffffff;
+
+    --principal: #7837e4;
+    --principal2: #ae93fb;
+    --principal3: #d9c8e7;
+
+    --box-shadow-principal: 1px 0px 10px rgba(78, 78, 78, 0.539);
+}
+
 /* Resetting the margins and paddings of all labels */
 * {
     margin: 0;
