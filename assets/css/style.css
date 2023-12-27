@@ -24,9 +24,7 @@ RESETS START
     --principal3: #d9c8e7;
 
     --box-shadow-principal: 0px 0px 5px rgba(0, 0, 0, 0.5);
-
 }
-
 
 /* Resetting the margins and paddings of all labels */
 * {
@@ -115,6 +113,7 @@ q:after {
     background-color: var(--background-principal);
     color: var(--color-principal);
 }
+
 ::selection {
     background-color: var(--background-principal);
     color: var(--color-principal);
@@ -204,7 +203,7 @@ h1 {
     line-height: 55px;
     background: #ccc;
     font-family: system-ui;
-    background: linear-gradient(#26eeda, #0bb3a2 );
+    background: linear-gradient(#0bb3a2, #ae93fb, #0bb3a2);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -247,7 +246,7 @@ Styles of each BOX
     overflow: hidden;
 }
 
-.main__title img {
+.main__container img {
     width: 80%;
     position: absolute;
     top: -10%;
@@ -260,21 +259,26 @@ Styles of each BOX
     box-shadow: var(--box-shadow-principal);
 }
 
-.main h2,
+.main__container h2,
 h3 {
     position: relative;
     width: 70%;
     padding-bottom: 2rem;
 }
 
-.main h2 {
+.main__container h2 {
     font-size: 3rem;
+    font-weight: 800;
     line-height: 3rem;
+    padding-bottom: 2rem;
+    color: var(--principal2);
+
 }
 
-.main h3 {
+.main__container h3 {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
 }
 
 /* === Languaje Box ===*/
@@ -287,175 +291,30 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: var(--box-color-principal);
-    color: var(--color-principal);
-    gap: 1rem;
-    background-size: 150%;
+    gap: 3rem;
 }
 
 .languaje:hover {
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.01);
     box-shadow: var(--box-shadow-principal);
 }
 
-.languaje h2 {
-    font-size: 2rem;
-    color: var(--principal2);
+.languaje a{
+    font-size: 4rem;
 }
 
-.languaje__op {
-    display: flex;
-    padding: 1rem;
-}
-
-.languaje__op button {
-    position: relative;
-    padding: 12px 20px;
-    background: var(--principal3);
-    font-size: 17px;
-    font-weight: 500;
-    color: #181818;
-    border: 1px solid var(--principal2);
-    border-radius: 8px;
-    box-shadow: 0 0 0 #d5f365;
+.languaje a:hover{
+    transform: scale(1.2);
     transition: all 0.3s ease-in-out;
-    margin: 0.4rem;
 }
 
-.star-1 {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    width: 25px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fffdef);
-    z-index: -5;
-    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+.languaje h2 {
+    font-size: 4rem;
+    cursor: pointer;
 }
 
-.star-2 {
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    width: 15px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fffdef);
-    z-index: -5;
-    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-3 {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    width: 5px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fffdef);
-    z-index: -5;
-    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-4 {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 8px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fffdef);
-    z-index: -5;
-    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-5 {
-    position: absolute;
-    top: 25%;
-    left: 45%;
-    width: 15px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fffdef);
-    z-index: -5;
-    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-6 {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    width: 5px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fffdef);
-    z-index: -5;
-    transition: all 0.8s ease;
-}
-
-button:hover {
-    background: transparent;
-    color: var(--principal2);
-    box-shadow: 0 0 25px #fec1958c;
-}
-
-button:hover .star-1 {
-    position: absolute;
-    top: -80%;
-    left: -30%;
-    width: 25px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fffdef);
-    z-index: 2;
-}
-
-button:hover .star-2 {
-    position: absolute;
-    top: -25%;
-    left: 10%;
-    width: 15px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fffdef);
-    z-index: 2;
-}
-
-button:hover .star-3 {
-    position: absolute;
-    top: 55%;
-    left: 25%;
-    width: 5px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fffdef);
-    z-index: 2;
-}
-
-button:hover .star-4 {
-    position: absolute;
-    top: 30%;
-    left: 80%;
-    width: 8px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fffdef);
-    z-index: 2;
-}
-
-button:hover .star-5 {
-    position: absolute;
-    top: 25%;
-    left: 115%;
-    width: 15px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fffdef);
-    z-index: 2;
-}
-
-button:hover .star-6 {
-    position: absolute;
-    top: 5%;
-    left: 60%;
-    width: 5px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fffdef);
-    z-index: 2;
-}
-
-.fil0 {
-    fill: #fffdef;
+.languaje h2:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
 }
 
 /* === Theme Box ===*/
@@ -473,7 +332,6 @@ button:hover .star-6 {
 
 .theme:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.02);
     box-shadow: var(--box-shadow-principal);
 }
 
@@ -492,7 +350,6 @@ button:hover .star-6 {
 
 .linkedin:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.02);
     box-shadow: var(--box-shadow-principal);
 }
 
@@ -523,7 +380,6 @@ button:hover .star-6 {
 
 .github:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.01);
     box-shadow: var(--box-shadow-principal);
 }
 
@@ -561,7 +417,6 @@ button:hover .star-6 {
 
 .projects:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.01);
     box-shadow: var(--box-shadow-principal);
 }
 
@@ -683,7 +538,6 @@ svg:hover .tooltip {
 
 .contact:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.02);
     box-shadow: var(--box-shadow-principal);
 }
 
@@ -715,7 +569,6 @@ svg:hover .tooltip {
 
 .xp:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.02);
     box-shadow: var(--box-shadow-principal);
 }
 
@@ -855,10 +708,8 @@ Styles theme box
     box-shadow:
         0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset,
         0em -0.062em 0.062em 0em #a1872a inset;
-    -webkit-filter: drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25))
-        drop-shadow(0em 0.062em 0.125em rgba(0, 0, 0, 0.25));
-    filter: drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25))
-        drop-shadow(0em 0.062em 0.125em rgba(0, 0, 0, 0.25));
+    -webkit-filter: drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25)) drop-shadow(0em 0.062em 0.125em rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25)) drop-shadow(0em 0.062em 0.125em rgba(0, 0, 0, 0.25));
     overflow: hidden;
     -webkit-transition: var(--transition);
     -o-transition: var(--transition);
@@ -970,15 +821,15 @@ Styles theme box
 
 /* actions */
 
-.theme-switch__checkbox:checked + .theme-switch__container {
+.theme-switch__checkbox:checked+.theme-switch__container {
     background-color: var(--container-night-bg);
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__circle-container {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__circle-container {
     left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter));
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__circle-container:hover {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__circle-container:hover {
     left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter) - 0.187em);
 }
 
@@ -986,23 +837,22 @@ Styles theme box
     left: calc(var(--circle-container-offset) + 0.187em);
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__moon {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__moon {
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
     transform: translate(0);
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__clouds {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__clouds {
     bottom: -4.062em;
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__stars-container {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__stars-container {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
 
 /***********************************************************
  Dark Mode 
@@ -1012,13 +862,13 @@ Styles theme box
     background-color: #0c0c0e;
 }
 
-.darkMode .main, 
-.darkMode .languaje, 
-.darkMode .theme, 
-.darkMode .github, 
-.darkMode .projects, 
+.darkMode .main,
+.darkMode .languaje,
+.darkMode .theme,
+.darkMode .github,
+.darkMode .projects,
 .darkMode .contact,
-.darkMode .xp{
+.darkMode .xp {
     background-color: #222;
     color: #f0f0f0;
 }
@@ -1026,8 +876,6 @@ Styles theme box
 .darkMode .skills .span {
     color: #f0f0f0;
 }
-
-
 
 /*******************************************************************************
 Mobile
@@ -1051,19 +899,19 @@ Mobile
         background-size: 150%;
     }
 
-    .main h2 {
-        font-size: 2rem;
-        line-height: 2rem;
+    .main__container h2 {
+        font-size: 2.7rem;
+        font-weight: 800;
+        line-height: 2.5rem;
         padding-bottom: 1.5rem;
     }
 
-    .main h3 {
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+    .main__container h3 {
+        font-size: 1.2rem;
         padding-bottom: 1rem;
     }
 
-    .main__title img {
+    .main__container img {
         width: 120%;
         position: absolute;
         top: 0%;
@@ -1093,86 +941,87 @@ Mobile
         font-size: 1.2rem;
         line-height: 1.2rem;
     }
-}
-
-@media only screen and (max-width: 750px) {
-    .container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2.2fr 0.7fr 0.7fr 0.7fr 0.7fr;
-        grid-template-areas:
-            "main main main main"
-            "languaje languaje theme theme"
-            "linkedin projects projects projects"
-            "github github github contact"
-            "skills skills xp xp";
-    }
-
-    .main {
-        background-size: 150%;
-    }
-
-    .main__title img {
-        width: 120%;
-        position: absolute;
-        top: 0%;
-        left: 40%;
-    }
-
-    .main h2,
-    h3 {
-        width: 90%;
-    }
-
-    .languaje h2 {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-    }
-
-    .languaje__op {
-        padding: 0;
-    }
-
-    .languaje__op button {
-        padding: 8px 14px;
-    }
-
-    .main h2 {
-        font-size: 2.1rem;
-        line-height: 2rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .main h3 {
-        font-size: 1.3rem;
-        line-height: 1.5rem;
-        padding-bottom: 1rem;
-    }
-
-    .skills i {
-        font-size: 2rem;
-    }
-
-    .github h2 {
-        font-size: 2rem;
-        line-height: 2rem;
-    }
-
-    .github h3 {
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-    }
-
-    .projects h2 {
-        font-size: 2rem;
-        line-height: 2rem;
-    }
-
-    .projects h3 {
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-    }
 
     .theme-switch {
         --toggle-size: 25px;
     }
+}
+
+@media only screen and (max-width: 750px) {
+        .container {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 2.3fr 0.7fr 0.7fr 0.7fr 0.7fr;
+            grid-template-areas:
+                "main main main main"
+                "languaje languaje theme theme"
+                "linkedin projects projects projects"
+                "github github github contact"
+                "skills skills xp xp";
+        }
+
+        .main {
+            background-size: 150%;
+        }
+
+        .main__container img {
+            width: 120%;
+            position: absolute;
+            top: 0%;
+            left: 40%;
+        }
+
+        .main__container h2,
+        h3 {
+            width: 90%;
+        }
+
+        .languaje {
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        .languaje h2 {
+            font-size: 3rem;
+            line-height: 1.5rem;
+        }
+
+        .main__container h2 {
+            font-size: 2.7rem;
+            font-weight: 800;
+            line-height: 2.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .main__container h3 {
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+        }
+
+        .skills i {
+            font-size: 2rem;
+        }
+
+        .github h2 {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        .github h3 {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
+
+        .projects h2 {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        .projects h3 {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
+
+        .theme-switch {
+            --toggle-size: 20px;
+        }
 }
