@@ -1024,7 +1024,11 @@ Mobile
 
         .languaje {
             flex-direction: row;
-            gap: 2rem;
+            gap: 1.5rem;
+        }
+
+        .languaje a{
+            font-size: 3rem;
         }
 
         .languaje h2 {
